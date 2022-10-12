@@ -69,6 +69,7 @@ input[type=range] {
 output {
     display:inline;
 }
+
 output[id="bmi"] {
     display:inline-block;
     width: 25%;
@@ -80,6 +81,18 @@ output[id="bmi"] {
     margin:5px;
     border-radius:10px;
 }
+
+table {
+  width: 40%;
+  border-collapse: collapse;
+}
+
+th,td {
+  border: 2px solid #F27B7F;
+  padding: 5px;
+  text-align: center;
+}
+
 
 
 

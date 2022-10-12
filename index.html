@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Kalkulator BMI</title>
+</head>
+<body> 
+    <span>
+        <h1>Kalkulator BMI</h1>
+        <p>Kalkulator BMI jest narzędziem, które pomoże Ci odpowiedzieć na pytanie, czy Twoja masa ciała jest prawidłowa oraz ile powinieneś ważyć aby utrzymać dobrą formę i zmniejszyć ryzyko chorób w przyszłosci.</p>
+        <h2>Co to jest BMI</h2>
+        <p>BMI (Body Mass Index) to wskaźnik zależności między masą ciała a wzrostem. Wartość ta jest kluczowa w ocenie ryzyka wystąpienia chorób związanych z nadwagą takich jak miażdżyca lub choroba niedokrwienna serca. Mogłoby się wydawać, że im niższe BMI, tym ryzyko wystąpienia chorób jest mniejsze. Jednak zbyt niskie, tak samo jak zbyt wysokie wyniki niosą za sobą zwiększone zagrożenie śmiercią z przyczyn sercowo-naczyniowych. Można więc przyjąć, że najlepszą prozdrowotną wartością BMI będzie ta znajdująca się w granicach normy.</p>
+    </span>
+
+    <form oninput= "wartoscwagi.value = waga.value; wartoscwzrostu.value = wzrost.value; bmi.value=waga.value / ((wzrost.value / 100) * (wzrost.value / 100))"> 
+        <input type="range" name="waga" min="10" max="300">Zaznacz swoją wagę<br>
+        <output id="wartoscwagi">10</output> kg<br>
+        <input type="range" name="wzrost" min="50" max="300">Zaznacz swój wzrost<br>
+        <output id="wartoscwzrostu">50</output> cm<br>
+        <output id="bmi">Wynik otrzymasz po wprowadzeniu wzrostu i wagi</output>Twój wynik BMI<br>
+
+    </form>
+
+    <span>
+        <h2>Normy BMI</h2>
+
+        <p>Zależność masy ciała od wzrostu pod postacią indeksu BMI została określona dla osób dorosłych i to one powinny sugerować się poniższymi normami.</p>
+            <ul>
+                <li>poniżej 16 - wygłodzenie</li>
+                <li>16 - 16.99 - wychudzenie</li>
+                <li>17 - 18.49 - niedowaga</li>
+                <li>18.5 - 24.99 - waga prawidłowa</li>
+                <li>25.0 - 29.99 - nadwaga</li>
+                <li>30.0 - 34.99 - I stopień otyłości</li>
+                <li>35.0 - 39.99 - II stopień otyłości</li>
+                <li>powyżej 40.0 - III stopień otyłości zwany otyłością skrajną.</li>
+            </ul>
+        </p>
+
+        <h2>BMI - interpretacja wyniku</h2>
+
+        <p>Jak już wiesz, prawidłowa masa ciała mieści się w widełkach BMI: 18,5-24,99 kg/m2. Wartości wskaźnika masy ciała poniżej normy wskazują na niedobór masy ciała, a powyżej - na jej nadmiar.
+        </p>
+
+        <h3>Niedobór masy ciała</h3>
+
+        <p>Zbyt niską masę ciała można podzielić na 3 stopnie: niedowagę, wychudzenie i wygłodzenie. Już niewielkie odchylenie od normy nie pozostaje bez wpływu na funkcjonowanie całego organizmu, zaczynając od układu hormonalnego. U kobiet z niedowagą zwiększa się ryzyko nieregularnych miesiączek, obfitszych krwawień  oraz zaburzeń funkcjonowania jajników. Poza tym niedobór masy ciała zwiększa ryzyko występowania alergii oraz obniża odporności organizmu. Należy również wspomnieć, że jest on powiązany z większym ryzykiem śmierci w porównaniu do osób o prawidłowej masie ciała.
+        </p>
+
+        <h3>Nadmiar masy ciała</h3>
+
+        <p>Nadmierną masę ciała natomiast można podzielić na 2 podstawowe stadia: nadwagę i otyłość. Otyłość, uznawana klinicznie za chorobę dzieli się na 3 stopnie. Już niewielka nadwaga zwiększa ryzyko zachorowania na nowotwory, choroby układu krążenia i cukrzycę typu 2. Im nadmiernych kilogramów jest więcej, szansa na pojawienie się schorzeń towarzyszących rośnie. Poza tym, tak samo jak w przypadku niedowagi, osoby z nadmierną masa ciała są narażone na zaburzenia płodności i obniżenie odporności, mimo, że przyczyny tych problemów są zgoła inne.
+        </p>
+
+        <h2>Interpretacja wyniku - i co dalej?</h2>
+
+        <p>Jeśli już obliczysz swoje BMI, wiesz czy Twoja masa ciała jest w normie. Jeśli jego wartość znalazła się poza granicami zdrowych wytycznych, nie traktuj tego jak „wyroku”. Niech stanie się to bodźcem do zmiany stylu życia - zaczynając od dobrania odpowiedniej kaloryczności diety, przez wdrożenie aktywności fizycznej i stosowanie zdrowych nawyków na co dzień. Po wprowadzeniu zmian, zaleca się co około 2 tygodnie kontrolować masę ciała, by móc ocenić zachodzące zmiany i móc sprawdzić nową wartość BMI.
+        </p>
+    </span>
+
+    <script src="js/scripts.js"></script>
+    
+    
+</body>
+</html>

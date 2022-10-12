@@ -1,0 +1,86 @@
+body {
+    background-color: white;
+    margin: 15px;
+    height: 100vh;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(45, 45, 45);   
+  }
+
+input[type=range] {
+    height: 25px;
+    -webkit-appearance: none;
+    margin: 10px;
+    width: 25%;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    /* width: 100%; */
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 2px #A6A6A6;
+    background: #FF96AB;
+    border-radius: 4px;
+    border: 2px solid #F27B7F;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 2px #A6A6A6;
+    border: 2px solid #F27B7F;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background: #FF96AB;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
+  }
+ 
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 2px #A6A6A6;
+    background: #FF96AB;
+    border-radius: 4px;
+    border: 2px solid #F27B7F;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 2px #A6A6A6;
+    border: 2px solid #F27B7F;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background: #FF96AB;
+    cursor: pointer;
+  }
+
+  input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 2px #A6A6A6;
+    border: 2px solid #F27B7F;
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background: #FF96AB;
+    cursor: pointer;
+  }
+
+output {
+    display:inline;
+}
+output[id="bmi"] {
+    display:inline-block;
+    width: 25%;
+    margin-top: 25px;
+    background-color:#FF96AB; 
+    border: 2px solid #F27B7F;
+    box-shadow: 1px 1px 2px #A6A6A6;
+    padding:8px 15px;
+    margin:5px;
+    border-radius:10px;
+}
+
+
+
+

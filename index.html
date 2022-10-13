@@ -10,23 +10,23 @@
     <title>Kalkulator BMI</title>
 </head>
 <body> 
-    <span>
+    <section>
         <h1>Kalkulator BMI</h1>
         <p>Kalkulator BMI jest narzędziem, które pomoże Ci odpowiedzieć na pytanie, czy Twoja masa ciała jest prawidłowa oraz ile powinieneś ważyć aby utrzymać dobrą formę i zmniejszyć ryzyko chorób w przyszłosci.</p>
         <h2>Co to jest BMI</h2>
         <p>BMI (Body Mass Index) to wskaźnik zależności między masą ciała a wzrostem. Wartość ta jest kluczowa w ocenie ryzyka wystąpienia chorób związanych z nadwagą takich jak miażdżyca lub choroba niedokrwienna serca. Mogłoby się wydawać, że im niższe BMI, tym ryzyko wystąpienia chorób jest mniejsze. Jednak zbyt niskie, tak samo jak zbyt wysokie wyniki niosą za sobą zwiększone zagrożenie śmiercią z przyczyn sercowo-naczyniowych. Można więc przyjąć, że najlepszą prozdrowotną wartością BMI będzie ta znajdująca się w granicach normy.</p>
-    </span>
+    </section>
 
-    <form oninput= "wartoscwagi.value = waga.value; wartoscwzrostu.value = wzrost.value; bmi.value=waga.value / ((wzrost.value / 100) * (wzrost.value / 100))"> 
+    <form oninput= "wartosc_wagi.value = waga.value; wartosc_wzrostu.value = wzrost.value; bmi.value=(waga.value / ((wzrost.value / 100) * (wzrost.value / 100))).toFixed(2)"> 
         <input type="range" name="waga" min="10" max="300">Zaznacz swoją wagę<br>
-        <output id="wartoscwagi">10</output> kg<br>
+        <output id="wartosc_wagi">10</output> kg<br>
         <input type="range" name="wzrost" min="50" max="300">Zaznacz swój wzrost<br>
-        <output id="wartoscwzrostu">50</output> cm<br>
+        <output id="wartosc_wzrostu">50</output> cm<br>
         <output id="bmi">Wynik otrzymasz po wprowadzeniu wzrostu i wagi</output>Twój wynik BMI<br>
 
     </form>
 
-    <span>
+    <section>
         <h2>Normy BMI</h2>
 
         <p>Zależność masy ciała od wzrostu pod postacią indeksu BMI została określona dla osób dorosłych i to one powinny sugerować się poniższymi normami.</p>
@@ -95,7 +95,7 @@
 
         <p>Jeśli już obliczysz swoje BMI, wiesz czy Twoja masa ciała jest w normie. Jeśli jego wartość znalazła się poza granicami zdrowych wytycznych, nie traktuj tego jak „wyroku”. Niech stanie się to bodźcem do zmiany stylu życia - zaczynając od dobrania odpowiedniej kaloryczności diety, przez wdrożenie aktywności fizycznej i stosowanie zdrowych nawyków na co dzień. Po wprowadzeniu zmian, zaleca się co około 2 tygodnie kontrolować masę ciała, by móc ocenić zachodzące zmiany i móc sprawdzić nową wartość BMI.
         </p>
-    </span>
+    </section>
 
     <script src="js/scripts.js"></script>
     
